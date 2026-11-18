@@ -1,0 +1,28 @@
+{
+  "name": "mcp-thermoprint",
+  "version": "0.1.0",
+  "description": "MCP server for Marklife P12 thermal label printer via @thermoprint/core",
+  "type": "module",
+  "bin": {
+    "mcp-thermoprint": "dist/server.js"
+  },
+  "main": "dist/server.js",
+  "types": "dist/server.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/server.ts",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@stoprocent/noble": "^2.8.0",
+    "@thermoprint/core": "file:../thermoprint/packages/core",
+    "fflate": "^0.8.2",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsx": "^4",
+    "typescript": "^5"
+  }
+}
